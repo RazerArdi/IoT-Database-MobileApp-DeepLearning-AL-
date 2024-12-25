@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS HomeSecurity;
+
+USE HomeSecurity;
+
+CREATE TABLE IF NOT EXISTS Users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    face_data BLOB
+);
+
+CREATE TABLE IF NOT EXISTS TrainingDataset (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    face_data LONGBLOB NOT NULL
+);
+
